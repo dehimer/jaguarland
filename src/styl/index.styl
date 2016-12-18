@@ -89,59 +89,75 @@ body
       height: 10px
       margin: 0 auto
 
-    @media (orientation: portrait)
 
-      @media (max-width: 500px)
-        .logo
-          margin-top: 15px
-          width: 50px
-          height: 50px
+    @media (max-width: 900px)
+      .logo
+        margin-top: 20px
+        width: 80px
+        height: 80px
+        padding: 20px
+        margin-top: 40px
 
-        .bigtitle
-          font-size: 22px
-          padding: 5px 0px
+      .bigtitle
+        font-size: 32px
+        width: 430px
+        margin: 0px auto
 
-        .devider
-          max-width: 80%
+      .devider
+        max-width: 290px
 
-        .title
-          font-size: 15px
-          padding: 5px
+      .title
+        font-size: 15px
+        width: 230px
+        margin: 0px auto
 
-        .text
-          font-size: 10px
-          padding: 5px 15px 
+      .text
+        font-size: 10px
+        padding: 5px 15px 
 
-        .arrow
-          margin-top: 5px
+      .arrow
+        margin-bottom: 40px
 
-      @media (max-width: 900px)
-        .logo
-          margin-top: 20px
-          width: 80px
-          height: 80px
-          padding: 20px
-          margin-top: 40px
+    @media (max-width: 500px)
+      .logo
+        margin-top: 15px
+        width: 50px
+        height: 50px
 
-        .bigtitle
-          font-size: 32px
-          width: 430px
-          margin: 0px auto
+      .bigtitle
+        font-size: 20px
+        padding: 5px 0px
+        width: 100%
 
-        .devider
-          max-width: 290px
+      .devider
+        max-width: 80%
 
-        .title
-          font-size: 15px
-          width: 230px
-          margin: 0px auto
+      .title
+        font-size: 15px
+        padding: 5px
 
-        .text
-          font-size: 10px
-          padding: 5px 15px 
+      .text
+        font-size: 10px
+        padding: 5px 15px 
 
-        .arrow
-          margin-bottom: 40px
+      .arrow
+        margin-top: 5px
+
+    @media (max-height: 700px)
+      .logo
+        height: 50px
+        width: 50px
+        padding: 10px
+        margin-top: 20px
+
+      .bigtitle
+        font-size: 22px
+
+      .text
+        font-size: 8px
+
+      .arrow
+        margin-bottom: 20px
 
 
 .middle
@@ -165,6 +181,7 @@ body
       margin: auto
       text-align: center
       font-size: 50%
+      max-width: 400px
 
 .bottom
   height: "%s%" % ($bottom-height)

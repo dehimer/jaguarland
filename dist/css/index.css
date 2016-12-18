@@ -88,32 +88,7 @@ body {
   height: 10px;
   margin: 0 auto;
 }
-@media (orientation: portrait) and (max-width: 500px) {
-  .top .message .logo {
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-  }
-  .top .message .bigtitle {
-    font-size: 22px;
-    padding: 5px 0px;
-  }
-  .top .message .devider {
-    max-width: 80%;
-  }
-  .top .message .title {
-    font-size: 15px;
-    padding: 5px;
-  }
-  .top .message .text {
-    font-size: 10px;
-    padding: 5px 15px;
-  }
-  .top .message .arrow {
-    margin-top: 5px;
-  }
-}
-@media (orientation: portrait) and (max-width: 900px) {
+@media (max-width: 900px) {
   .top .message .logo {
     margin-top: 20px;
     width: 80px;
@@ -140,6 +115,49 @@ body {
   }
   .top .message .arrow {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .top .message .logo {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .top .message .bigtitle {
+    font-size: 20px;
+    padding: 5px 0px;
+    width: 100%;
+  }
+  .top .message .devider {
+    max-width: 80%;
+  }
+  .top .message .title {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .top .message .text {
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+  .top .message .arrow {
+    margin-top: 5px;
+  }
+}
+@media (max-height: 700px) {
+  .top .message .logo {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .top .message .bigtitle {
+    font-size: 22px;
+  }
+  .top .message .text {
+    font-size: 8px;
+  }
+  .top .message .arrow {
+    margin-bottom: 20px;
   }
 }
 .middle {
@@ -169,6 +187,7 @@ body {
   margin: auto;
   text-align: center;
   font-size: 50%;
+  max-width: 400px;
 }
 .bottom {
   height: 45%;
