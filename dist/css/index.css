@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.top {
+  height: 45%;
+  overflow: hidden;
+}
+.top .video-container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+.top .video-container video {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+@media (max-width: 1280px), (min-height: 2275px) {
+  .top .video-container video {
+    min-width: 100%;
+    max-height: 100%;
+    min-height: none;
+    max-width: none;
+  }
+}
+@media (min-width: 1280px), (max-height: 2275px) {
+  .top .video-container video {
+    min-height: 100%;
+    max-width: 100%;
+    min-width: none;
+    max-height: none;
+  }
+}
+.middle {
+  background-color: #fff;
+  height: 10%;
+}
+.bottom {
+  background-color: #333;
+  height: 45%;
+}
