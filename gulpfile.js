@@ -6,7 +6,6 @@ var gutil = require('gulp-util');
 var stylus = require('gulp-stylus');
 var autoprefixer = require('gulp-autoprefixer');
 var nib = require('nib');
-var fontgen = require('gulp-fontgen');
 var uglify = require('gulp-uglify');
 var livereload = require('gulp-livereload');
 
@@ -32,13 +31,6 @@ gulp.task("jade", function(event) {
   .pipe(jade({pretty: true}))
   .pipe(gulp.dest(destinations.html))
   .pipe(livereload());
-});
-
-gulp.task('fontgen', function() {
-  return gulp.src(sources.fonts)
-    .pipe(fontgen({
-      dest: destinations.fonts
-    }));
 });
 
 // Compile and copy Stylus
