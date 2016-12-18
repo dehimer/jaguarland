@@ -15,7 +15,7 @@ var sources = {
   partials: "src/partials/**/*.jade",
   stylus: "src/styl/**/*.styl",
   scripts: "src/js/**/*.js",
-  fonts: "src/fonts/*.{ttf,otf}"
+  // fonts: "src/fonts/*.{ttf,otf}"
 };
 
 // Define destinations object
@@ -23,7 +23,7 @@ var destinations = {
   html: "dist/",
   css: "dist/css",
   js: "dist/js",
-  fonts: "dist/fonts"
+  // fonts: "dist/fonts"
 };
 
 // Compile and copy Jade
@@ -91,4 +91,4 @@ gulp.task("refresh", ["jade"], function(){
 });
 
 // Define default task
-gulp.task("default", ["jade", "scripts", "fontgen", "stylus", "server", "watch"]);
+gulp.task("default", ["jade", "scripts", "stylus", "server", "watch"]);
