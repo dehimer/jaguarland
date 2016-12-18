@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "JLREmericSemiBold";
+    src: url("JLREmeric-SemiBold.eot");
+    src: url("JLREmeric-SemiBold.eot?#iefix") format("embedded-opentype"),
+         url("JLREmeric-SemiBold.woff2") format("woff2"),
+         url("JLREmeric-SemiBold.woff") format("woff"),
+         url("JLREmeric-SemiBold.ttf") format("ttf"),
+         url("JLREmeric-SemiBold.svg#JLREmericSemiBold") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "JLREmeric-ExtraLight";
+    src: url("JLREmeric-ExtraLight.eot");
+    src: url("JLREmeric-ExtraLight.eot?#iefix") format("embedded-opentype"),
+         url("JLREmeric-ExtraLight.woff2") format("woff2"),
+         url("JLREmeric-ExtraLight.woff") format("woff"),
+         url("JLREmeric-ExtraLight.ttf") format("ttf"),
+         url("JLREmeric-ExtraLight.svg#JLREmeric-ExtraLight") format("svg");
+    font-style: normal;
+    font-weight: 200;
+}

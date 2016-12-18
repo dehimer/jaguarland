@@ -2,9 +2,13 @@ doctype html
 html
   head
     title JaguarLand
+    link(href='/fonts/JLREmeric-ExtraLight.css', rel='stylesheet')
+    link(href='/fonts/JLREmeric-Regular.css', rel='stylesheet')
+    link(href='/fonts/JLREmeric-SemiBold.css', rel='stylesheet')
     link(href='/css/index.css', rel='stylesheet')
     script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBecyrPDlEBoI1X9C6mi4XkVn2EaHBV7Q0')
     script(type='text/javascript', src='/js/map.js')
+
   body
     div.top
       div.video-container
@@ -16,16 +20,19 @@ html
           Логотип
         
         div.bigtitle
-          Станьте дедом морозом с <b>Jaguar Land Rover</b>
+          span.lightfont
+            Станьте дедом морозом с 
+          span.regularfont
+            Jaguar Land Rover
         
         div.devider
           Разделитель
         
-        div.title
+        div.title.regularfont
           Загадайте своё желание и исполните чужое
         
         div.text
-          div
+          div.regularfont
             В рождественнские дни легко поверить в сказку. Давайте сделаем её реальностью!
             Загадайте желание, и Дед Мороз его исполнит. А вы в ответ тоже станьде Дедом Морозом, чтобы исполнить желание другого человека.
             Станьте частью новогоднего чуда, ведь чем больше участников, тем масштабнее волшебство!
@@ -36,9 +43,9 @@ html
 
     div.middle
       div.message
-        div.title
+        div.title.regularfont
           Карта
-        div.text
+        div.text.regularfont
           Чтобы участвовать в акции вам необходимо прийти на инсталляцию, которая находится по адресу ул. ----------, возле дома ----
     div.bottom
       div#map

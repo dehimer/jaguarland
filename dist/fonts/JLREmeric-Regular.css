@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "JLREmeric";
+    src: url("JLREmeric-Regular.eot");
+    src: url("JLREmeric-Regular.eot?#iefix") format("embedded-opentype"),
+         url("JLREmeric-Regular.woff2") format("woff2"),
+         url("JLREmeric-Regular.woff") format("woff"),
+         url("JLREmeric-Regular.ttf") format("ttf"),
+         url("JLREmeric-Regular.svg#JLREmeric") format("svg");
+    font-style: normal;
+    font-weight: regular;
+}

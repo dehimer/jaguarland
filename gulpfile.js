@@ -6,6 +6,7 @@ var gutil = require('gulp-util');
 var stylus = require('gulp-stylus');
 var autoprefixer = require('gulp-autoprefixer');
 var nib = require('nib');
+var fontgen = require('gulp-fontgen');
 var uglify = require('gulp-uglify');
 var livereload = require('gulp-livereload');
 
@@ -13,14 +14,16 @@ var sources = {
   jade: "src/jade/**/*.jade",
   partials: "src/partials/**/*.jade",
   stylus: "src/styl/**/*.styl",
-  scripts: "src/js/**/*.js"
+  scripts: "src/js/**/*.js",
+  fonts: "src/fonts/*.{ttf,otf}"
 };
 
 // Define destinations object
 var destinations = {
   html: "dist/",
   css: "dist/css",
-  js: "dist/js"
+  js: "dist/js",
+  fonts: "dist/fonts"
 };
 
 // Compile and copy Jade
@@ -29,6 +32,13 @@ gulp.task("jade", function(event) {
   .pipe(jade({pretty: true}))
   .pipe(gulp.dest(destinations.html))
   .pipe(livereload());
+});
+
+gulp.task('fontgen', function() {
+  return gulp.src(sources.fonts)
+    .pipe(fontgen({
+      dest: destinations.fonts
+    }));
 });
 
 // Compile and copy Stylus
@@ -81,4 +91,4 @@ gulp.task("refresh", ["jade"], function(){
 });
 
 // Define default task
-gulp.task("default", ["jade", "scripts", "stylus", "server", "watch"]);
+gulp.task("default", ["jade", "scripts", "fontgen", "stylus", "server", "watch"]);
