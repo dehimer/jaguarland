@@ -3,19 +3,20 @@ google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
 
+    var moscowPosition = [55.7522200, 37.6155600];
 
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
         zoom: 12,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(55.7522200, 37.6155600), // Moscow
-
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
+        center: new google.maps.LatLng(moscowPosition[0]+0.02, moscowPosition[1]), // Moscow
+        styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}],
+        disableDefaultUI: true
+        // scrollwheel: false,
+        // zoomControl: false,
+        // scaleControl: false,
+        // streetViewControl: false,
+        // rotateControl: false,
     };
 
     // Get the HTML DOM element that will contain your map 
@@ -26,9 +27,9 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.7522200, 37.6155600),
-        map: map,
-        title: 'Цель'
-    });
+    // var marker = new google.maps.Marker({
+    //     position: new google.maps.LatLng(moscowPosition[0], moscowPosition[1]),
+    //     map: map,
+    //     title: 'Цель'
+    // });
 }
