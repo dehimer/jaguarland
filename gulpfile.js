@@ -52,7 +52,8 @@ gulp.task("stylus", function(event) {
 gulp.task('scripts', function() {
   gulp.src(sources.scripts)
     .pipe(uglify())
-    .pipe(gulp.dest(destinations.js));
+    .pipe(gulp.dest(destinations.js))
+    .pipe(livereload());
 });
 
 // Server
@@ -80,4 +81,4 @@ gulp.task("refresh", ["jade"], function(){
 });
 
 // Define default task
-gulp.task("default", ["jade", "stylus", "server", "watch"]);
+gulp.task("default", ["jade", "scripts", "stylus", "server", "watch"]);

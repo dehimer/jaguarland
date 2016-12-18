@@ -3,6 +3,8 @@ html
   head
     title JaguarLand
     link(href='/css/index.css', rel='stylesheet')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBecyrPDlEBoI1X9C6mi4XkVn2EaHBV7Q0')
+    script(type='text/javascript', src='/js/map.js')
   body
     div.top
       div.video-container
@@ -10,3 +12,4 @@ html
           source(src='/media/moscow_winter.mp4', type='video/mp4')
     div.middle
     div.bottom
+      div#map
