@@ -11,6 +11,7 @@ body
   height: 100vh
   width: 100vw
   overflow: hidden
+  text-transform: uppercase
 
 .top
   position: relative
@@ -32,7 +33,6 @@ body
       transform: translate(-50%, -50%)
       top: 50%
       left: 50%
-
 
     @media (max-width: "%spx" % ($video-width)), (min-height: "%spx" % ($max-height))
       video
@@ -60,8 +60,88 @@ body
     color: white
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-around
     text-align: center
+
+    .logo
+      border-radius: 50%
+      width: 30px
+      height: 30px
+      background-color: white
+      margin: 0 auto
+      padding: 15px
+      box-sizing: border-box
+
+      .jaguar
+        max-width: 100%
+        height: 50%
+
+      .landrover
+        max-width: 100%
+        height: 50%
+
+    .devider
+      max-width: 50%
+      margin: 0 auto
+
+    .arrow
+      width: 10px
+      height: 10px
+      margin: 0 auto
+
+    @media (orientation: portrait)
+
+      @media (max-width: 500px)
+        .logo
+          margin-top: 15px
+          width: 50px
+          height: 50px
+
+        .bigtitle
+          font-size: 22px
+          padding: 5px 0px
+
+        .devider
+          max-width: 80%
+
+        .title
+          font-size: 15px
+          padding: 5px
+
+        .text
+          font-size: 10px
+          padding: 5px 15px 
+
+        .arrow
+          margin-top: 5px
+
+      @media (max-width: 900px)
+        .logo
+          margin-top: 20px
+          width: 80px
+          height: 80px
+          padding: 20px
+          margin-top: 40px
+
+        .bigtitle
+          font-size: 32px
+          width: 430px
+          margin: 0px auto
+
+        .devider
+          max-width: 290px
+
+        .title
+          font-size: 15px
+          width: 230px
+          margin: 0px auto
+
+        .text
+          font-size: 10px
+          padding: 5px 15px 
+
+        .arrow
+          margin-bottom: 40px
 
 
 .middle
@@ -72,12 +152,19 @@ body
   .message
     display: flex
     flex-direction: column
+    justify-content: space-around
+    height: 100%
+    wigth: 100%
     
     .title
+      margin: auto
       text-align: center
+      font-size: 80%
 
     .text
+      margin: auto
       text-align: center
+      font-size: 50%
 
 .bottom
   height: "%s%" % ($bottom-height)
