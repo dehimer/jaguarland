@@ -1,8 +1,8 @@
 $top-height = 55
 $middle-height = 10
 $bottom-height = 35
-$video-width = 640
-$video-height = 512
+$video-width = 1440
+$video-height = 900
 $max-height = floor(100*$video-height/$top-height)
 
 body
@@ -46,7 +46,7 @@ body
       top: 50%
       left: 50%
 
-    @media (max-width: "%spx" % ($video-width)), (min-height: "%spx" % ($max-height))
+    @media (max-width: "%spx" % ($video-width)) and (min-height: "%spx" % ($max-height))
       video
         min-width: 100%
         max-height: 100%
@@ -54,7 +54,7 @@ body
         min-height: none
         max-width: none
 
-    @media (min-width: "%spx" % ($video-width)), (max-height: "%spx" % ($max-height))
+    @media (min-width: "%spx" % ($video-width)) and (max-height: "%spx" % ($max-height))
       video
         min-height: 100%
         width: 100%

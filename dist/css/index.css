@@ -38,7 +38,7 @@ body {
   top: 50%;
   left: 50%;
 }
-@media (max-width: 640px), (min-height: 930px) {
+@media (max-width: 1440px) and (min-height: 1636px) {
   .top .video-container video {
     min-width: 100%;
     max-height: 100%;
@@ -46,7 +46,7 @@ body {
     max-width: none;
   }
 }
-@media (min-width: 640px), (max-height: 930px) {
+@media (min-width: 1440px) and (max-height: 1636px) {
   .top .video-container video {
     min-height: 100%;
     width: 100%;
