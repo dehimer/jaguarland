@@ -227,7 +227,7 @@ body {
     font-size: 100%;
   }
   .middle .message .text {
-    font-size: 80%;
+    font-size: 60%;
     max-width: 650px;
   }
 }
