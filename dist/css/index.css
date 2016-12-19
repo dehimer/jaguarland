@@ -19,7 +19,7 @@ body {
 }
 .top {
   position: relative;
-  height: 45%;
+  height: 55%;
   overflow: hidden;
 }
 .top .video-container {
@@ -38,7 +38,7 @@ body {
   top: 50%;
   left: 50%;
 }
-@media (max-width: 640px), (min-height: 1137px) {
+@media (max-width: 640px), (min-height: 930px) {
   .top .video-container video {
     min-width: 100%;
     max-height: 100%;
@@ -46,7 +46,7 @@ body {
     max-width: none;
   }
 }
-@media (min-width: 640px), (max-height: 1137px) {
+@media (min-width: 640px), (max-height: 930px) {
   .top .video-container video {
     min-height: 100%;
     width: 100%;
@@ -88,10 +88,15 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
-.top .message .arrow {
-  width: 10px;
+.top .message .ruleslink {
   height: 10px;
   margin: 0 auto;
+}
+.top .message .ruleslink a {
+  color: #fff;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
 }
 @media (min-width: 901px) {
   .top .message .logopadding {
@@ -117,9 +122,9 @@ body {
   .top .message .text {
     font-size: 12px;
     padding: 5px 15px;
-    max-width: 650px;
+    max-width: 750px;
   }
-  .top .message .arrow {
+  .top .message .ruleslink {
     margin-bottom: 40px;
   }
 }
@@ -148,7 +153,7 @@ body {
     font-size: 12px;
     padding: 5px 15px;
   }
-  .top .message .arrow {
+  .top .message .ruleslink {
     margin-bottom: 40px;
   }
 }
@@ -174,7 +179,7 @@ body {
     font-size: 12px;
     padding: 5px 15px;
   }
-  .top .message .arrow {
+  .top .message .ruleslink {
     margin-top: 5px;
   }
 }
@@ -191,7 +196,7 @@ body {
   .top .message .text {
     font-size: 10px;
   }
-  .top .message .arrow {
+  .top .message .ruleslink {
     margin-bottom: 20px;
   }
 }
@@ -216,17 +221,22 @@ body {
 .middle .message .text {
   margin: auto;
   text-align: center;
-  font-size: 50%;
+  font-size: 12px;
   max-width: 400px;
 }
 @media (min-width: 901px) {
   .middle .message .text {
-    font-size: 60%;
-    max-width: 650px;
+    font-size: 12px;
+    max-width: 750px;
+  }
+}
+@media (max-height: 700px) {
+  .middle .message .text {
+    font-size: 10px;
   }
 }
 .bottom {
-  height: 45%;
+  height: 35%;
   width: 100%;
 }
 .bottom #map {

@@ -1,6 +1,6 @@
-$top-height = 45
+$top-height = 55
 $middle-height = 10
-$bottom-height = 45
+$bottom-height = 35
 $video-width = 640
 $video-height = 512
 $max-height = floor(100*$video-height/$top-height)
@@ -90,10 +90,14 @@ body
       max-width: 400px
       margin: 0 auto
 
-    .arrow
-      width: 10px
+    .ruleslink
       height: 10px
       margin: 0 auto
+      a
+        color: white
+        font-size: 12px
+        color: white
+        cursor: pointer
 
 
     @media (min-width: 901px)
@@ -120,9 +124,9 @@ body
       .text
         font-size: 12px
         padding: 5px 15px
-        max-width: 650px 
+        max-width: 750px 
 
-      .arrow
+      .ruleslink
         margin-bottom: 40px
 
 
@@ -151,7 +155,7 @@ body
         font-size: 12px
         padding: 5px 15px 
 
-      .arrow
+      .ruleslink
         margin-bottom: 40px
 
     @media (max-width: 500px)
@@ -176,7 +180,7 @@ body
         font-size: 12px
         padding: 5px 15px 
 
-      .arrow
+      .ruleslink
         margin-top: 5px
 
     @media (max-height: 700px)
@@ -192,7 +196,7 @@ body
       .text
         font-size: 10px
 
-      .arrow
+      .ruleslink
         margin-bottom: 20px
 
 
@@ -211,14 +215,20 @@ body
     .text
       margin: auto
       text-align: center
-      font-size: 50%
+      font-size: 12px
       max-width: 400px
 
     @media (min-width: 901px)
 
       .text
-        font-size: 60%
-        max-width: 650px
+        font-size: 12px
+        max-width: 750px
+
+    @media (max-height: 700px)
+
+      .text
+        font-size: 10px
+
 
 
 .bottom
