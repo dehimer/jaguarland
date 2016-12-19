@@ -26,10 +26,10 @@ function init() {
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
-    // var marker = new google.maps.Marker({
-    //     position: new google.maps.LatLng(moscowPosition[0], moscowPosition[1]),
-    //     map: map,
-    //     title: 'Цель'
-    // });
+    //Let's also add a marker while we're at it
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(moscowPosition[0], moscowPosition[1]),
+        map: map,
+        title: 'Москва'
+    });
 }

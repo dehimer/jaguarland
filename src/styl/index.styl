@@ -1,8 +1,8 @@
 $top-height = 45
 $middle-height = 10
 $bottom-height = 45
-$video-width = 1280
-$video-height = 1024
+$video-width = 640
+$video-height = 512
 $max-height = floor(100*$video-height/$top-height)
 
 body
@@ -45,7 +45,7 @@ body
     @media (min-width: "%spx" % ($video-width)), (max-height: "%spx" % ($max-height))
       video
         min-height: 100%
-        max-width: 100%
+        width: 100%
 
         min-width: none
         max-height: none
@@ -92,6 +92,35 @@ body
       width: 10px
       height: 10px
       margin: 0 auto
+
+
+    @media (min-width: 901px)
+      .logo
+        margin-top: 20px
+        width: 80px
+        height: 80px
+        padding: 20px
+        margin-top: 40px
+
+      .bigtitle
+        font-size: 35px
+        width: 500px
+        margin: 0px auto
+
+      .devider
+        max-width: 300px
+
+      .title
+        font-size: 15px
+        width: 230px
+        margin: 0px auto
+
+      .text
+        font-size: 12px
+        padding: 5px 15px 
+
+      .arrow
+        margin-bottom: 40px
 
 
     @media (max-width: 900px)
@@ -186,6 +215,15 @@ body
       text-align: center
       font-size: 50%
       max-width: 400px
+
+    @media (min-width: 901px)
+      .title
+        font-size: 100%
+
+      .text
+        font-size: 80%
+        max-width: 650px
+
 
 .bottom
   height: "%s%" % ($bottom-height)
