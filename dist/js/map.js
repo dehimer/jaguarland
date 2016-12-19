@@ -1,1 +1,1 @@
-function init(){myMap=new ymaps.Map("map",{center:[moscowPosition[0]+.002,moscowPosition[1]],zoom:13});var o=new ymaps.Placemark([55.754699,37.619269],{},{preset:"twirl#redIcon"});myMap.geoObjects.add(o)}ymaps.ready(init);var myMap,moscowPosition=[55.75222,37.61556];
+function init(){myMap=new ymaps.Map("map",{center:[moscowPosition[0]+.002,moscowPosition[1]+.004],zoom:15});var o=new ymaps.Placemark([55.754399,37.619369],{},{preset:"twirl#redIcon"});myMap.geoObjects.add(o)}ymaps.ready(init);var myMap,moscowPosition=[55.75222,37.61556];
