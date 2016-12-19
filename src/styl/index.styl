@@ -50,6 +50,12 @@ body
       top: 50%
       left: 50%
 
+    video.fitHeight
+      height: 100%
+
+    video.fitWidth
+      width: 100%
+
     @media (max-width: "%spx" % ($video-width)) and (min-height: "%spx" % ($max-height))
       video
         min-width: 100%
@@ -65,6 +71,7 @@ body
 
         min-width: initial
         max-height: none
+
 
   .message
     position: absolute

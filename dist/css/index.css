@@ -44,6 +44,12 @@ body {
   top: 50%;
   left: 50%;
 }
+.top .video-container video.fitHeight {
+  height: 100%;
+}
+.top .video-container video.fitWidth {
+  width: 100%;
+}
 @media (max-width: 1440px) and (min-height: 1636px) {
   .top .video-container video {
     min-width: 100%;
