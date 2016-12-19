@@ -19,11 +19,15 @@ body
   top: 0%
   left: 50%
   width: 150px
+  text-align: center;
 
   img
     max-width: 100%
     max-height: 100%
 
+@media (max-height: 700px) and (max-width: 500px)
+  .logo
+    height: 30px;
 
 .top
   position: relative
@@ -51,7 +55,7 @@ body
         min-width: 100%
         max-height: 100%
         
-        min-height: none
+        min-height: initial
         max-width: none
 
     @media (min-width: "%spx" % ($video-width)) and (max-height: "%spx" % ($max-height))
@@ -59,7 +63,7 @@ body
         min-height: 100%
         width: 100%
 
-        min-width: none
+        min-width: initial
         max-height: none
 
   .message
@@ -184,6 +188,7 @@ body
         margin-top: 5px
 
     @media (max-height: 700px)
+
       .logopadding
         height: 50px
         width: 50px
@@ -198,7 +203,6 @@ body
 
       .ruleslink
         margin-bottom: 20px
-
 
 .middle
   background-color: white
